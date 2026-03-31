@@ -1,6 +1,9 @@
 # Changelog
 
-## v3 (current)
+## v0.3 (current)
+
+**Prompt heading**
+- Renamed from "TarotSeed - Tarot Reader — LLM System Prompt" to "TarotSeed - AI Tarot Reader System Prompt"
 
 **Integrity & hallucination guard (Step 0)**
 - Strengthened the code execution guard to explicitly block "just try anyway" and "pretend the code ran" scenarios
@@ -18,6 +21,6 @@
 
 ---
 
-## v2
+## v0.2
 
 Initial public version. Established the core structure: role, interpretation style, four-step process, card drawing code with personal seed mechanism, and the principles section.
