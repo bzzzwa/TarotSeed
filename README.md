@@ -13,7 +13,7 @@
 
 **Steps:**
 
-1. Copy the prompt — fastest via the **[raw Gist](https://gist.githubusercontent.com/bzzzwa/66db34912ff7e749146d68153030a30b/raw/0d03faf967edd84fd9e1e695f41791faaaa334ec/tarot-reader-prompt.md)**
+1. 📋 Copy the prompt — fastest via the **[raw Gist](https://gist.githubusercontent.com/bzzzwa/66db34912ff7e749146d68153030a30b/raw/0d03faf967edd84fd9e1e695f41791faaaa334ec/tarot-reader-prompt.md)**
 2. Paste it as your first message in a new LLM chat (or as a system prompt)
 3. The model will guide you from there
 
