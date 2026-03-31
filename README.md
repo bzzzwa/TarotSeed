@@ -1,16 +1,31 @@
 # TarotSeed 🌱
 
-*An LLM system prompt for tarot readings grounded in integrity, reflection, and honest randomness.*
+*An AI tarot reader that draws cards through verifiable Python code execution — not through hallucination or storytelling dressed as chance.*
+
+---
+
+## How to use it
+
+**Requirements:** An LLM with Python code execution enabled.
+- Claude (claude.ai): turn on *Analysis tool* in settings
+- ChatGPT: enable *Code Interpreter*
+- Gemini: enable *Code execution*
+
+**Steps:**
+
+1. Copy the prompt — fastest via the **[raw Gist](https://gist.githubusercontent.com/bzzzwa/66db34912ff7e749146d68153030a30b/raw/0d03faf967edd84fd9e1e695f41791faaaa334ec/tarot-reader-prompt.md)**
+2. Paste it as your first message in a new LLM chat (or as a system prompt)
+3. The model will guide you from there
+
+The full prompt file is also in this repo: [`tarot-reader-prompt.md`](tarot-reader-prompt.md)
 
 ---
 
 ## What is this?
 
-TarotSeed is not a tarot app. It's a carefully designed system prompt that transforms any capable LLM into a thoughtful tarot reader — one that draws cards through verifiable Python code execution, not through hallucination or storytelling dressed as chance.
+TarotSeed is a carefully designed system prompt that transforms any capable LLM into a thoughtful tarot reader. The card draw uses real Python code execution with a cryptographic seed built from your personal input — making each draw both unpredictable and personally imprinted. If code execution is unavailable, the session stops. There is no fallback to simulation.
 
-The name reflects both the technical mechanism (a cryptographic seed that imprints your personal input onto the draw) and the spirit of the project: planting something in uncertain soil and seeing what grows.
-
-This is an experiment in the best sense of the word. A question: *can a language model serve as a genuine instrument of reflection — without pretending to be more than it is?* TarotSeed is one attempt at an answer.
+This is an experiment in the best sense of the word: *can a language model serve as a genuine instrument of reflection — without pretending to be more than it is?*
 
 ---
 
@@ -37,43 +52,9 @@ TarotSeed is deliberately built for those moments. Not for idle curiosity (thoug
 
 ---
 
-## How to use it
-
-**Requirements:** An LLM with Python code execution enabled.
-- Claude (claude.ai): turn on *Analysis tool* in settings
-- ChatGPT: enable *Code Interpreter*
-- Gemini: enable *Code execution*
-
-**Steps:**
-
-1. Open the prompt file: **[`tarot-reader-prompt.md`](tarot-reader-prompt.md)**
-2. Copy the entire contents
-3. Paste it as your first message in a new LLM chat (or as a system prompt)
-4. The model will guide you from there
-
-For the fastest copy experience, use the **raw Gist**:
-👉 **[Open raw prompt on GitHub Gist](https://gist.githubusercontent.com/bzzzwa/66db34912ff7e749146d68153030a30b/raw/0d03faf967edd84fd9e1e695f41791faaaa334ec/tarot-reader-prompt.md)**
-
----
-
-## How the draw works
-
-Each draw combines three things:
-- **Your seed text** — any word or phrase you provide; it doesn't need to relate to your question
-- **A UUID** — a unique identifier generated fresh each time
-- **A nanosecond timestamp** — captured at the moment of the draw
-
-These are hashed together with SHA-256 to produce a seed that's both unpredictable and personally imprinted. The result is reproducible if you keep the seed — but impossible to manipulate in advance.
-
-The seed text is a technical input only. Its content has no influence on the interpretation.
-
----
-
 ## Versions
 
-The current version is always in [`tarot-reader-prompt.md`](tarot-reader-prompt.md).
-
-Previous versions are archived in [`versions/`](versions/) for reference. Changes between versions are documented in [`CHANGELOG.md`](CHANGELOG.md).
+The current version is always in [`tarot-reader-prompt.md`](tarot-reader-prompt.md). Previous versions are archived in [`versions/`](versions/). Changes are documented in [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
